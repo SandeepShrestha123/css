@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVIGATION TRY</title>
+    <style>
+        nav {
+            background-color: rgba(53, 25, 25, 0.904);
+            border-radius: 30px;
+        }
+
+        nav ul {
+            overflow: auto;
+        }
+
+        nav li {
+            list-style: none;
+            float: left;
+            margin: 13px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            padding: 3px 3px;
+            color: white;
+            position: relative;
+
+        }
+
+        nav ul li a::after {
+            content: "";
+            left: 0;
+            height: 4px;
+            width: 0;
+            ;
+            bottom: 0;
+            transition: 0.9s;
+            background-color: rgb(211, 142, 52);
+            position: absolute;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+
+        }
+
+        nav input {
+            border: 2px solid black;
+            border-radius: 7px;
+            padding: 3px 30px;
+            width: 135px;
+        }
+
+        nav ul li a:hover {
+            color: rgb(236, 24, 112);
+            transition: 0.9s;
+        }
+
+        .bg {
+            background-image: url(img/wallpaper.jpg);
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content {
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        .fa-magnifying-glass:hover{
+            transition: 0.9s;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+      <!-- code for navigation bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>  Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-people-group"></i>  About us</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i>  Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-message"></i>  Services</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search on this website">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </ul>
+        </nav>
+
+        <!-- starting of background image and some para -->
+        <div class="bg">
+            <div class="content">
+                <h1 style="color: white;font-size: 60px;">Welcome to our Website</h1>
+                <p style="color:blanchedalmond; font-family: Verdana, Geneva, Tahoma, sans-serif;">Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Nisi praesentium sunt, alias maiores iste culpa,
+                    aliquid a repudiandae perferendis placeat quisquam hic expedita qui tenetur consequuntur?
+                    Reprehenderit
+                    sunt amet nam.</p>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
