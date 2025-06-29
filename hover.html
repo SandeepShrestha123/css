@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        .main{
+            height: 400px;
+            width: 99%;
+            border: 3px solid black;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box1,.box2,.box3{
+            height: 350px;
+            width: 350px;
+            
+            margin: 20px;
+            
+            
+        }
+
+        .box1:hover{
+            background-color: red;
+             cursor: pointer;
+             box-shadow: 10px 10px 8px purple;
+        }
+
+        .box2:hover{
+            background-color: orangered; 
+            cursor: pointer;
+        }
+
+        .box3:hover{
+            background-color: blueviolet; 
+            cursor: pointer;
+        }
+
+
+
+        .container1,.container2,.container3{
+            height: 50px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 40px;
+            font-weight: bold;
+            background-color: brown;
+        }
+
+        .container1:hover{
+             cursor: pointer;
+            background-color: blue;
+        }
+       
+        .container2:hover{
+            background-color: aqua; 
+            cursor: pointer;
+        }
+
+        .container3:hover{
+            background-color: green; 
+            cursor: pointer;
+        }
+
+        .child1,.child2,.child3{
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 15S0px;
+            width: 250px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        /* .child1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .child2 img{
+            width: 100%;
+            height: 100%;
+        }
+        .child3 img{
+            width: 100%;
+            height: 100%;
+        } */
+        .child1:hover{
+            background-color: pink;
+             cursor: pointer;
+        }
+        .child2:hover{
+            background-color: crimson; 
+            cursor: pointer;
+        }
+        .child3:hover{
+            background-color: grey; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="box1">
+            <div class="child1">
+                <img  class="image1" src="img/pic.jpg" height="150" width="250" alt="">
+            </div>
+
+            <div class="container1">
+                <p>ADD TO CART</p>
+            </div>
+
+        </div>
+
+        <div class="box2">
+            <div class="child2">
+                <img class="image2" src="img/pic.jpg" height="150" width="250" alt="">
+            </div>
+
+            <div class="container2">
+                <p>ADD TO CART</p>
+            </div>
+
+        </div>
+
+        <div class="box3">
+            <div class="child3">
+                <img class="image3" src="img/pic.jpg" height="150" width="250" alt="">
+            </div>
+
+            <div class="container3">
+                <p>ADD TO CART</p>
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>

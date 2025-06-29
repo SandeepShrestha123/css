@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1{
+            text-align: center;
+            margin: 30px;
+        }
+
+
+        .main{
+            display: flex;
+            height: 70vh;
+            width: 99%;
+        }
+       
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: auto;
+        }
+        
+        .content{
+            width: 50%;
+            height: auto;
+            text-align: center;
+        }
+          
+        /* for max width 0-768px */
+        @media (max-width: 768px){
+            h1{
+                color: purple;
+
+            }
+
+            .main{
+                display:block;
+            }
+
+            .img{
+                width: 100%;
+            }
+
+            .content{
+                width: 100%
+            }
+
+            .img img{
+                width: 100%;
+            }
+        }
+
+
+        /* for max with ranging from 0-468px */
+        @media (max-width:468px){
+            .img img{
+                padding: 20%;
+                box-sizing: border-box;
+            }
+
+            .content{
+               color: purple;
+               word-spacing: 20px;
+            }
+
+            h1{
+                background-color: brown;
+            }
+        }
+
+        /* for width ranging from 1024 to above */
+        @media (min-width: 1024px){
+            h1{
+                text-shadow: 0 0 .2em blueviolet;
+                background-color: aquamarine;
+            }
+
+            .img img{
+                border-radius: 40px;
+            }
+
+            .content{
+                text-align: center;
+                text-decoration: underline;
+                font-family: Playball;
+            }
+        }
+
+        /* for width ranging in between 769-1023 */
+        @media (min-width:769px) and (max-width:1023px){
+            .content{
+                background-color: brown;
+            }
+        }
+     
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Responsive Web Page</h1>
+
+    <div class="main">
+
+
+        <div class="img">
+            <img src="img/mountains.jpg"  alt="">
+        </div>
+
+
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto atque similique sunt quibusdam. Repellat
+                obcaecati, quae id at enim optio aspernatur minima dolorum blanditiis expedita atque vel illo facere
+                voluptatum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur veniam odio corrupti rem numquam
+                iusto molestiae ratione exercitationem adipisci dignissimos iure delectus, illo quod labore quasi,
+                similique impedit nisi sit.</p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
